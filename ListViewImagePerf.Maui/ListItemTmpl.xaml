@@ -11,10 +11,10 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Image x:Name="img"
+            <!--<Image x:Name="img"
                 HorizontalOptions="Center" VerticalOptions="Center"
                         Aspect="AspectFill"
-        WidthRequest="75" HeightRequest="75" />
+        WidthRequest="75" HeightRequest="75" />-->
 
             <StackLayout Grid.Column="1"
                    Padding="4"

@@ -17,7 +17,7 @@ namespace ListViewImagePerf.Maui
             if (!(BindingContext is ItemDto item))
                 return;
 
-            img.Source = item.ImageUrl;
+            //img.Source = item.ImageUrl;
 
             base.OnBindingContextChanged();
         }

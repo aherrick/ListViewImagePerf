@@ -6,6 +6,13 @@
 
     <StackLayout>
         <ListView x:Name="lstView" HasUnevenRows="True">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+
+                    <views:ListItemTmpl />
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
     </StackLayout>
 </ContentPage>
