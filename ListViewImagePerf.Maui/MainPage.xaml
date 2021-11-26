@@ -5,14 +5,12 @@
 
     <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
-        <Label Text="Hi"></Label>
-
-        <ListView x:Name="lstView" HasUnevenRows="True" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <ListView x:Name="lstView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Label Text="Hi"></Label>
+                        <Label Text="{Binding Location}"></Label>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
