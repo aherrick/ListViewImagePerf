@@ -34,13 +34,16 @@
 			Include="Resources\appicon.svg"
 			ForegroundFile="Resources\appiconfg.svg"
 			Color="#512BD4" />
+
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\appiconfg.svg" Color="#512BD4" />
+
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<PackageReference Include="Microsoft.Graphics.Win2D" Version="1.0.0.29-preview3" />
-	</ItemGroup>
 
+		<!-- Custom Fonts -->
+		<MauiFont Include="Resources\Fonts\*" />
+	</ItemGroup>
 
 	<ItemGroup Condition="$(TargetFramework.Contains('-windows'))">
 		<!-- Required - WinUI does not yet have buildTransitive for everything -->
@@ -48,31 +51,9 @@
 		<PackageReference Include="Microsoft.Graphics.Win2D" Version="1.0.0.29-preview3" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <MauiFont Remove="Resources\Fonts\OpenSans-Regular.ttf" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiImage Remove="Resources\Images\dotnet_bot.svg" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <AndroidResource Include="Resources\Fonts\OpenSans-Regular.ttf" />
-	  <AndroidResource Include="Resources\Images\dotnet_bot.svg" />
-	</ItemGroup>
-
-	
-
-	<ItemGroup>
-		<PackageReference Include="Bogus" Version="34.0.1" />
-	</ItemGroup>
-
-
-
-
 	<PropertyGroup Condition="$(TargetFramework.Contains('-windows'))">
 		<OutputType>WinExe</OutputType>
 		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
 	</PropertyGroup>
-	
+
 </Project>
