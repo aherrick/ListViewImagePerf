@@ -1,24 +1,21 @@
 ﻿using Microsoft.Maui.Controls;
-using Microsoft.Maui.Essentials;
-using System;
+using System.Collections.Generic;
 
 namespace ListViewImagePerf.Maui
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
-        }
 
-        private void OnCounterClicked(object sender, EventArgs e)
-        {
-            count++;
-            CounterLabel.Text = $"Current count: {count}";
+            var items = new List<ItemDto>();
+            for (int i = 0; i < 500; i++)
+            {
+                items.Add(new ItemDto());
+            }
 
-            SemanticScreenReader.Announce(CounterLabel.Text);
+            lstView.ItemsSource = items;
         }
     }
 }
