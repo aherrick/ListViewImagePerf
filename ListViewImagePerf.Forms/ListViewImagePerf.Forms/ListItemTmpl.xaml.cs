@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace ListViewImagePerf.Forms
 {
-    public partial class ListItemTmpl : ViewCell
+    public partial class ListItemTmpl : Grid
     {
         public ListItemTmpl()
         {

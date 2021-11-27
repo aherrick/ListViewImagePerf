@@ -10,7 +10,7 @@ namespace ListViewImagePerf.Maui
             InitializeComponent();
 
             var items = new List<ItemDto>();
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 500; i++)
             {
                 items.Add(new ItemDto());
             }

@@ -5,14 +5,13 @@
              x:Class="ListViewImagePerf.Forms.MainPage">
 
     <StackLayout>
-        <ListView x:Name="lstView" HasUnevenRows="True">
-
-            <ListView.ItemTemplate>
+        <CollectionView x:Name="lstView">
+            <CollectionView.ItemTemplate>
                 <DataTemplate>
 
                     <views:ListItemTmpl />
                 </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
     </StackLayout>
 </ContentPage>
